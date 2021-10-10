@@ -53,11 +53,11 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
+            text='Hey {}!!\nI am Telly File to Link Generator Bot.\n\nSend me any file & see the magic\n\nMade With 💕 By @Tellybots_4u!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')],
-                    [InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')]
+                    [InlineKeyboardButton('📡 Update Channel', url='https://t.me/tellybots_4u'), InlineKeyboardButton('💬 Support Group', url='https://t.me/tellybots_support')],
+                    [InlineKeyboardButton('🚦 Bot Status', url='https://t.me/tellybots_4u')]
                 ]
             ),
             disable_web_page_preview=True
@@ -85,7 +85,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/AH_File2Link_Bot?start=AbirHasan2005_{usr_cmd}")
+                                                     url=f"https://t.me/AH?start=AbirHasan2005_{usr_cmd}")
                             ]
                         ]
                     ),
