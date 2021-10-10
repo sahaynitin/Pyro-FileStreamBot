@@ -2,15 +2,6 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    # Start Message
-    START = """
-Hey {}
-
-I am Fastest Gofile Uploader Bot. 
-Just send me the media to get stream link from Gofile.io !
-
-Made With 💕 By @Tellybots_4u
-    """
 
     # Rest Buttons
     buttons = [
