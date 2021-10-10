@@ -53,7 +53,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='Hey {}!!\nI am Telly File to Link Generator Bot.\n\nSend me any file & see the magic\n\nMade With 💕 By @Tellybots_4u!',
+            text='🧒 Hey Bruh!!\nI am Telly File to Link Generator Bot.\n\nSend me any file & see the magic\n\nMade With 💕 By @Tellybots_4u!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('📡 Update Channel', url='https://t.me/tellybots_4u'), InlineKeyboardButton('💬 Support Group', url='https://t.me/tellybots_support')],
