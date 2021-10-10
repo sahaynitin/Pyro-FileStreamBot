@@ -11,7 +11,7 @@ db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
 
 @StreamBot.on_message(filters.command('start') & filters.private & ~filters.edited)
-async def start(b, m):
+async def start(bot, msg):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
         await b.send_message(
