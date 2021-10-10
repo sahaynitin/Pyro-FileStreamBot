@@ -26,7 +26,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [💬 Support Group](https://t.me/tellybots_support).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -48,7 +48,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [💬 Support Group](https://t.me/tellybots_4u).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -85,7 +85,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/AH?start=AbirHasan2005_{usr_cmd}")
+                                                     url=f"https://t.me/tellyfilestreamerbot?start=Tellybots_4u_{usr_cmd}")
                             ]
                         ]
                     ),
@@ -95,7 +95,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [💬 Support Group](https://t.me/tellybots_support).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -123,7 +123,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Your Link Generated 👇! \n\n📂 **File Name:** `{}`\n\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -145,7 +145,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [💬 Support Group](https://t.me/tellybots_support).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -167,18 +167,18 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [💬 Support Group](https://t.me/tellybots_support).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Send me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
+        text="Send me any File I will provide you Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin with All Permission !\n\nBy @Tellybots_4u",
         parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"), InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
+                [InlineKeyboardButton("🤖 Update Channel", url="https://t.me/tellybots_4u"), InlineKeyboardButton("💬 Support Group", url="https://t.me/Tellybots_4u")],
+                [InlineKeyboardButton("🚦 Bot Status", url="https://t.me/tellybots_4u")]
             ]
         )
     )
